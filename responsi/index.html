@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polling Sederhana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="poll-container">
+        <h2>Polling Sederhana</h2>
+        <form id="pollForm" action="proses.php" method="post">
+            <p>Pilih makanan favorit anda :</p>
+            
+            <div class="pilihan">
+                <input type="radio" name="pilihan" value="Nasi Goreng" id="opt1">
+                <label for="opt1">Nasi Goreng</label>
+            </div>
+            
+            <div class="poll-option">
+                <input type="radio" name="pilihan" value="Mie Goreng" id="opt2">
+                <label for="opt2">Mie Goreng</label>
+            </div>
+            
+            <div class="poll-option">
+                <input type="radio" name="pilihan" value="Batagor" id="opt3">
+                <label for="opt3">Batagor</label>
+            </div>
+
+            <div class="poll-option">
+                <input type="radio" name="pilihan" value="Ketoprak" id="opt4">
+                <label for="opt4">Ketoprak</label>
+            </div>
+            
+            <div id="error" class="error"></div>
+            <button type="submit">Kirim</button>
+        </form>
+        
+        <div id="results" class="results">
+            <h3>Hasil Polling:</h3>
+            <div id="hasil_pilih"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
